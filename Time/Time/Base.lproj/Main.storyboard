@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="83z-KM-9p0">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Timer-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkT-n7-acI">
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jm6-cT-iJe">
+                                <state key="normal" title="Pause Timer">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="timer_pause_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S5k-zG-f4K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jr-4i-kpM">
+                                <state key="normal" title="Lap">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="lap_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ViF-Go-3K6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upt-Ap-ZqT">
+                                <rect key="frame" x="141" y="482" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lap 2">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yv9-uQ-43l">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="s6G-qr-G36"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYL-js-Wmz">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Yg9-Ha-MVM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vuh-cK-Oog">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sxg-Gj-tks"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99H-qB-QQ7">
+                                <state key="normal" title="Clear Laps">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear_lap_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AyF-K0-vz7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJa-iV-5FZ">
+                                <rect key="frame" x="261" y="482" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lap 3">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8x-bn-P3y">
+                                <state key="normal" title="Stop Timer">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Timer_stop_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A3p-pV-85o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lI-pH-tUA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MFO-db-a6B"/>
+                                </constraints>
+                                <state key="normal" title="Start Timer">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Timer_start_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nm6-jC-oQ0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UkT-n7-acI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" id="0Km-Mw-MFX"/>
+                            <constraint firstItem="Vuh-cK-Oog" firstAttribute="trailing" secondItem="HYL-js-Wmz" secondAttribute="trailing" id="7Qf-Vc-lpv"/>
+                            <constraint firstItem="5jr-4i-kpM" firstAttribute="top" secondItem="Jm6-cT-iJe" secondAttribute="bottom" constant="34" id="GBS-gF-DEH"/>
+                            <constraint firstItem="Vuh-cK-Oog" firstAttribute="leading" secondItem="HYL-js-Wmz" secondAttribute="leading" id="JSY-gM-yd7"/>
+                            <constraint firstItem="u8x-bn-P3y" firstAttribute="leading" secondItem="Jm6-cT-iJe" secondAttribute="trailing" constant="37" id="P8q-s6-leY"/>
+                            <constraint firstItem="99H-qB-QQ7" firstAttribute="baseline" secondItem="5jr-4i-kpM" secondAttribute="baseline" id="R25-qp-aHF"/>
+                            <constraint firstItem="Jm6-cT-iJe" firstAttribute="leading" secondItem="6lI-pH-tUA" secondAttribute="trailing" constant="34" id="RWD-pX-zn3"/>
+                            <constraint firstItem="Yv9-uQ-43l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="X0p-43-Hhw"/>
+                            <constraint firstItem="HYL-js-Wmz" firstAttribute="trailing" secondItem="Yv9-uQ-43l" secondAttribute="trailing" id="XVl-Kq-CIU"/>
+                            <constraint firstItem="Yv9-uQ-43l" firstAttribute="top" secondItem="UkT-n7-acI" secondAttribute="bottom" constant="42" id="dUW-ZD-7Ku"/>
+                            <constraint firstItem="Vuh-cK-Oog" firstAttribute="top" secondItem="HYL-js-Wmz" secondAttribute="bottom" constant="37" id="ebe-9U-pfG"/>
+                            <constraint firstItem="Jm6-cT-iJe" firstAttribute="baseline" secondItem="6lI-pH-tUA" secondAttribute="baseline" id="gkF-l9-cjs"/>
+                            <constraint firstItem="UkT-n7-acI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hpx-nw-tHd"/>
+                            <constraint firstItem="Yv9-uQ-43l" firstAttribute="leading" secondItem="HYL-js-Wmz" secondAttribute="leading" id="iJl-kk-0bh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6lI-pH-tUA" secondAttribute="bottom" constant="125" id="kxS-91-OhP"/>
+                            <constraint firstItem="HYL-js-Wmz" firstAttribute="top" secondItem="Yv9-uQ-43l" secondAttribute="bottom" constant="40" id="pKZ-Jd-0S3"/>
+                            <constraint firstItem="99H-qB-QQ7" firstAttribute="leading" secondItem="5jr-4i-kpM" secondAttribute="trailing" constant="66" id="rCM-JA-ycQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Yv9-uQ-43l" secondAttribute="trailing" id="v2m-a3-FVE"/>
+                            <constraint firstItem="6lI-pH-tUA" firstAttribute="top" secondItem="Vuh-cK-Oog" secondAttribute="bottom" constant="27" id="vGh-Ug-SoN"/>
+                            <constraint firstItem="Jm6-cT-iJe" firstAttribute="baseline" secondItem="u8x-bn-P3y" secondAttribute="baseline" id="vZE-Cu-9x1"/>
+                            <constraint firstItem="5jr-4i-kpM" firstAttribute="centerX" secondItem="UkT-n7-acI" secondAttribute="centerX" constant="-69" id="vay-3k-NH6"/>
+                            <constraint firstItem="6lI-pH-tUA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="xpN-Rg-nmj"/>
+                            <constraint firstItem="Yv9-uQ-43l" firstAttribute="trailing" secondItem="UkT-n7-acI" secondAttribute="trailing" id="zcA-3F-2se"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="upt-Ap-ZqT"/>
+                                <exclude reference="LJa-iV-5FZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Timer" id="exG-tI-7Ue"/>
+                    <connections>
+                        <outlet property="label_lap1" destination="Yv9-uQ-43l" id="P4s-Do-NDG"/>
+                        <outlet property="label_lap2" destination="HYL-js-Wmz" id="Heh-dG-pMg"/>
+                        <outlet property="label_lap3" destination="Vuh-cK-Oog" id="xzP-Ld-YP8"/>
+                        <outlet property="time_label" destination="UkT-n7-acI" id="5wX-CQ-BWU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="575"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T6O-3m-XaG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="83z-KM-9p0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wwL-eT-OxW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Tnn-Mw-Nro"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xno-sA-Bbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="575"/>
+        </scene>
+    </scenes>
+</document>
